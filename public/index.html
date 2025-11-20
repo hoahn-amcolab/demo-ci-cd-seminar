@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo CI/CD – Rails Static Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #4f46e5, #0ea5e9);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 700px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      opacity: 0.95;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #ffffff;
+      color: #0f172a;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e2e8f0;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>🚀 Demo CI/CD Rails → GitHub Pages</h1>
+    <p>
+      Đây là trang index tĩnh được build từ Rails và deploy tự động bằng GitHub Actions.<br />
+      Nếu bạn thấy trang này, nghĩa là CI/CD đã hoạt động thành công.  
+    </p>
+
+    <a href="https://www.google.com/search?q=c%C3%A1i+n%C3%A0y+%C4%91%E1%BB%83+ai+click+th%C3%AC+tim+hi%E1%BB%83u+ci%2Fcd+nh%C3%A9&sca_esv=6f10166bc04ebec3&sxsrf=AE3TifO7ubm4WYNG4kTffG7ZcP4Nsmu4Pg%3A1763622990442&source=hp&ei=TsAeaeH0GLuSvr0PhpK2qQw&iflsig=AOw8s4IAAAAAaR7OXs_lB_WHmSBicYNevJ0hCU4I3ekD&ved=0ahUKEwjh0_HOl4CRAxU7ia8BHQaJLcUQ4dUDCBg&uact=5&oq=c%C3%A1i+n%C3%A0y+%C4%91%E1%BB%83+ai+click+th%C3%AC+tim+hi%E1%BB%83u+ci%2Fcd+nh%C3%A9&gs_lp=Egdnd3Mtd2l6IjNjw6FpIG7DoHkgxJHhu4MgYWkgY2xpY2sgdGjDrCB0aW0gaGnhu4N1IGNpL2NkIG5ow6kyBRAAGO8FMgUQABjvBTIFEAAY7wVI_DlQqARYhTlwAXgAkAEAmAGMAaAB3ieqAQUyNi4yNbgBA8gBAPgBAZgCL6ACjSSoAgrCAgcQIxgnGOoCwgINEC4YxwEYJxjqAhivAcICBBAjGCfCAgwQIxiABBgTGCcYigXCAgcQABiABBgTwgIIEAAYgAQYywHCAggQABgTGBYYHsICBhAAGBYYHsICBRAhGKABwgIFECEYnwXCAgQQIRgVmAMH8QWSUy3ikUBscpIHBTI0LjIzoAfY-QGyBwUyMy4yM7gHhiTCBwcyMC4yNi4xyAc7&sclient=gws-wiz" class="btn">Khám phá thêm</a>
+
+    <footer>© 2025 — Demo CI/CD Rails Static</footer>
+  </div>
+</body>
+</html>
