@@ -31,9 +31,13 @@ jobs:
           bundle install
           yarn install --frozen-lockfile || true
 
+      - name: Setup secret_key_base for production
+        run: |
+          echo "SECRET_KEY_BASE=$(bundle exec rails secret)" >> $GITHUB_ENV
+
       - name: Precompile assets
         run: |
-          RAILS_ENV=production bundle exec rails assets:precompile
+          RAILS_ENV=production SECRET_KEY_BASE=$SECRET_KEY_BASE bundle exec rails assets:precompile
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
